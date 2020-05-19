@@ -1,38 +1,108 @@
 .App {
   text-align: center;
+  margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  position: relative;
+  background-color: rgb(83, 24, 75);
+  text-transform: uppercase;
+  text-align: center;
+  text-align: center;
+  font-family: "Fondamento", cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  bottom: 200px;
+  margin-bottom: 30px;
+  margin-top: 180px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-body {
+  border-radius: 0.45em;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #5c6664;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: rgb(83, 24, 75);
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 0.45em;
+}
+.select::after {
+  content: "\25BC";
+
+  top: 0;
+  right: 0;
+  padding: 0 2em;
+  background: #fff;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: rgb(83, 24, 75);
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center1 {
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+button:focus {
+  outline-style: none;
+}
+
+button {
+  border: 25%;
+  border-radius: 20px 20px 20px 20px;
+  height: 30px;
+  width: 200px;
+  border-color: rgb(245, 242, 239);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #fff;
+  color: rgb(83, 24, 75);
+}
+
+.card {
+  color: rgb(83, 24, 75);
+  border-color: rgb(83, 24, 75);
+}
+
+.container1 {
+  margin-left: 40%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
